@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RateSync | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logos">
+            <!-- Logo Slide Container -->
+            <div class="logo-slide">
+                <p>NIFTY 50 : <span style="color: rgb(3, 216, 3);">25,235</span></p>
+                <p>SENSEX : <span style="color: rgb(3, 216, 3);">82,134</span></p>
+                <p>S&P 500 : <span style="color: rgb(255, 1, 1);">5,648</span></p>
+                <p>Nikkei 225 : <span style="color: rgb(3, 216, 3)">38,647</span></p>
+                <p>BN NIFTY : <span style="color: red;">47,849</span></p>
+                <p>Dow Jones : <span style="color: red;">41,563</span></p>
+                <p>GIFT NIFTY : <span style="color: rgb(3, 216, 3)">25,433.00</span></p>
+            </div>
+            <div class="logo-slide">
+                <!-- Repeated logo slide for scrolling -->
+                <p>NIFTY 50 : <span style="color: rgb(3, 216, 3);">25,235</span></p>
+                <p>SENSEX : <span style="color: rgb(3, 216, 3);">82,134</span></p>
+                <p>S&P 500 : <span style="color: rgb(255, 1, 1);">5,648</span></p>
+                <p>Nikkei 225 : <span style="color: rgb(3, 216, 3)">38,647</span></p>
+                <p>BN NIFTY : <span style="color: red;">47,849</span></p>
+                <p>Dow Jones : <span style="color: red;">41,563</span></p>
+                <p>GIFT NIFTY : <span style="color: rgb(3, 216, 3)">25,433.00</span></p>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main">
+        <form class="form" action="#" method="get">
+            <h2>RateSync Box</h2>
+            <label for="currency">Choose your currency</label>
+            <div class="dropdown">
+                <!-- From Currency Dropdown -->
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="From Currency Flag">
+                        <select id="from-currency" name="from">
+                            <!-- Options populated by JavaScript -->
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Rotate Icon -->
+                <i class="fa-solid fa-rotate"></i>
+                
+                <!-- To Currency Dropdown -->
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="To Currency Flag">
+                        <select id="to-currency" name="to">
+                            <!-- Options populated by JavaScript -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="amount">
+                <label for="amount">Enter the amount: </label>
+                <input type="number" name="amount" id="amount" min="1" value="1">
+            </div>
+
+            <div class="msg">1 USD = 80 INR</div>
+            <button type="submit">Get Exchange Rate</button>
+        </form>
+    </section>
+
+    <footer>
+        <a href="https://linktr.ee/realsubodh" target="_blank">
+            <button id="contact">
+                <i class="fa-solid fa-user"></i>
+            </button>
+        </a>
+    </footer>
+
+    <!-- External JS Files -->
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
